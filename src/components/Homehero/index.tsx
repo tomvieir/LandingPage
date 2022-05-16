@@ -1,3 +1,4 @@
+import SectionTitle from '../SectionTitle'
 import styles from './Homehero.module.scss'
 
 export default function Homehero() {
@@ -6,8 +7,10 @@ export default function Homehero() {
             <img src='./../../personimg.jpg' alt="imagem" />
 
             <div className={styles.rightContainer}>
-                <strong>Bem vindo!</strong>
-                <h2>Me chamo Weverton</h2>
+                <SectionTitle 
+                    title="Bem vindo!" 
+                    description="Me chamo Weverton" 
+                />
 
                 <div className={styles.containerBox}>
 
