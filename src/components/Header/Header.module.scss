@@ -19,7 +19,7 @@
     position: relative;
     
     nav {
-        margin-left: 5rem;
+        // margin-left: 5rem;
         height:5rem;
 
         @media (max-width: 768px) {
@@ -41,6 +41,8 @@
             & + a {
                 margin-left: 2rem;
             }
+
+            
 
             &.active {
                 color: var(--textLight);
