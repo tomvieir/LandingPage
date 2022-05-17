@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import Experiencias from '../components/Experiencias'
 import Homehero from '../components/Homehero'
+import Projetos from '../components/Projetos'
 import styles from '../styles/Home.module.scss'
 
 const Home: NextPage = () => {
@@ -15,6 +16,7 @@ const Home: NextPage = () => {
 
       <Homehero />
       <Experiencias />
+      <Projetos />
       
     </div>
   )
