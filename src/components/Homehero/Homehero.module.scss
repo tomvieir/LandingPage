@@ -10,13 +10,19 @@
         width: 25rem;
         border-radius: 50%;
         margin: 2rem;
+       
     }
 
     .rightContainer {
         display: flex;
         flex-direction: column;
-        width: 30rem;
-        padding: 1.5rem;
+        width: 39rem;
+        
+        margin:0 4rem;
+
+        @media (max-width: 1540px) {
+            margin: 0;
+        }
 
         
         .boxContent {
@@ -39,16 +45,10 @@
 
 
                 @media (max-width: 1450px) {
-                    width: 18rem;
-                    padding: 1.5rem;
+                    width: 100%;
+                    
                     font-size: 0.8rem;
                 }
-
-                @media (max-width: 1000px) {
-                    width: 100%;
-                  }
-
-                
 
                 .comment {
                     color: var(--text);
