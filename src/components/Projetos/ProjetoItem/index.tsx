@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { BsArrowRightCircle } from "react-icons/bs";
+import ButtonLearnMore from "../../ButtonLearnMore";
 import styles from './ProjetoItem.module.scss';
 
 interface ProjetoProps {
@@ -25,10 +27,13 @@ interface ProjetoProps {
         <button type="button">
           <Link href={`/projetos/${slug}`}>
             <a>
-              Ver mais 
+              <ButtonLearnMore />
             </a>
           </Link>
         </button>
+      
+
+        
       </div>
     );
   }
