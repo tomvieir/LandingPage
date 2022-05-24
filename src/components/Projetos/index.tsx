@@ -11,11 +11,11 @@ interface IProjeto {
     description: string;
     link: string;
     thumbnail: string;
-  }
-  
-  interface ProjetosProps {
+}
+
+interface ProjetosProps {
     projetos: IProjeto[];
-  }
+}
 
 export default function Projetos({ projetos }: ProjetosProps) {
     return (
@@ -24,19 +24,19 @@ export default function Projetos({ projetos }: ProjetosProps) {
                 <SectionTitle title='#Ultimos ptojetos' description='' />
             </div>
 
-            <section>           
+            <section>
                 <ProjetoItem
                     key='##'
                     img='./../../personimg.jpg'
                     title='projeto 1'
-                    type='##'
+                    type='Webpage'
                     slug='##'
                 />
                 <ProjetoItem
                     key='##'
                     img='./../../personimg.jpg'
                     title='projeto 1'
-                    type='##'
+                    type='WebApp'
                     slug='##'
                 />
                 <ProjetoItem
@@ -57,7 +57,7 @@ export default function Projetos({ projetos }: ProjetosProps) {
 
             <button type="button">
                 <Link href="/projetos">
-                <a>Ver todos os projetos</a>
+                    <a>Ver todos os projetos </a>
                 </Link>
             </button>
 
