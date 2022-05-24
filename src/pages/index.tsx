@@ -1,6 +1,6 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
-import Image from 'next/image'
+import Conhecimentos from '../components/Conhecimentos'
 import Experiencias from '../components/Experiencias'
 import Homehero from '../components/Homehero'
 import Projetos from '../components/Projetos'
@@ -16,10 +16,13 @@ const Home: NextPage = () => {
 
       <Homehero />
       <Experiencias />
-      <Projetos />
+      <Projetos projetos={[]} /> 
+      <Conhecimentos />
       
     </div>
   )
 }
 
 export default Home
+
+//props do projetos temporario
