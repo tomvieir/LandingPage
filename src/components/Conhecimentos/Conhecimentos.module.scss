@@ -1,0 +1,42 @@
+.container {
+    width: 100%;
+
+    .titleContainer {
+        margin-top: 2rem;
+    }
+
+    .Itemscontainer {
+        margin: 7rem 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+
+        .item {
+            display: flex;
+            flex-direction: column;
+            margin: 2rem;
+
+            strong {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: var(--text)
+            }
+
+            svg {
+                width: 7rem;
+                height: 7rem;
+                color: var(--secondary);
+                margin-bottom: 2rem;
+                transition: 0.5s;
+
+                &:hover {
+                    color: var(--primary);
+                }
+            }
+        }
+
+        
+    }
+}
