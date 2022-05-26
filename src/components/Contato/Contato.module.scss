@@ -1,0 +1,187 @@
+
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+
+
+    .formContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 2rem;
+        background-color: #0874741c;
+        padding: 20px;
+        border-radius: 10px;
+        gap: 1rem;
+
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+
+            .formGroup {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin-top: 50px;
+
+               
+                input {
+                    width: 100%;
+                    height: 50px;
+                    color: aqua;
+                    border-radius: 10px;
+                    border: 1px solid var(--border);
+                    padding: 10px;
+                    margin-top: 10px;
+                    outline: none;
+                    background-color: var(--input-background);
+                    transition: 0.5s ;
+                    
+
+                    &:focus {
+                        border: 1px solid var(--primary);
+                        background-color: var(--input-background-hover);
+                    }
+
+                    &:hover {
+                        background-color: var(--input-background-hover);
+                    }
+
+                    &::placeholder {
+                        color: var(--primary);
+                    }
+                    
+                }
+               
+            }
+
+            textarea {
+                width: 100%;
+                height: 200px;
+                border-radius: 10px;
+                border: 1px solid var(--border);
+                padding: 10px;
+                margin-top: 10px;
+                outline: none;
+                background-color: var(--input-background);
+                color: aqua;
+                resize: none;
+                transition: all 0.5s;
+
+                &:focus {
+                    border: 1px solid var(--primary);
+                    background-color: var(--input-background-hover);
+                }
+
+                &:hover {
+                    background-color: var(--input-background-hover);
+                }
+
+                &::placeholder {
+                    color: var(--primary);
+                }
+            }
+
+            
+        }
+    }
+    
+    button {
+        padding: 0.8rem 3rem;
+        border-radius: 0.5rem;
+        border: none;
+        transition: 0.5s;
+        background-color: var(--primary);
+    
+        &:hover {
+          opacity: 0.8;
+        }
+    
+        a {
+          text-transform: uppercase;
+          color: #fff;
+          font-size: 1.5rem;
+          font-weight: 300;
+        }
+    }
+
+    .contactContainer {
+        width:100%;
+        margin-top: 2rem;
+        display: inline-flex;
+        
+        
+        
+
+        .sectionTitle {
+            width: 100%;
+            
+
+            strong, 
+            h2 {
+                font-size: 1.8rem;
+            }
+        }
+
+        .itemContainer {
+            max-width: 500px;
+            display: flex;
+            flex-direction: row;
+            margin: 0 auto;
+            border-radius: 10px;
+            background-color: #0874741c;
+            padding: 1rem;
+
+            .item {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin: 0 2rem;
+                
+
+
+                svg {
+                    width: 3.5rem;
+                    height: 3.5rem;
+                    color: rgba(255, 255, 255, 0.829);
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: darkturquoise;
+                    }
+                }
+            }
+        }
+
+
+
+    }
+
+    @media (max-width:780px) {
+        .contactContainer{
+            display: flex;
+            flex-direction: column;
+
+            .itemContainer {
+                width: 100%;
+
+                .item {
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+}
