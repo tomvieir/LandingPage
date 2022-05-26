@@ -46,13 +46,7 @@ export default function Projetos({ projetos }: ProjetosProps) {
                     type='##'
                     slug='##'
                 />
-                <ProjetoItem
-                    key='##'
-                    img='./../../personimg.jpg'
-                    title='projeto 1'
-                    type='##'
-                    slug='##'
-                />
+                
             </section>
 
             <button type="button">
