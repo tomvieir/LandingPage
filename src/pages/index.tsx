@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Conhecimentos from '../components/Conhecimentos'
+import Contato from '../components/Contato'
 import Experiencias from '../components/Experiencias'
 import Homehero from '../components/Homehero'
 import Projetos from '../components/Projetos'
@@ -18,6 +19,7 @@ const Home: NextPage = () => {
       <Experiencias />
       <Projetos projetos={[]} /> 
       <Conhecimentos />
+      <Contato />
       
     </div>
   )
