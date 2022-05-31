@@ -3,6 +3,7 @@ import Head from 'next/head'
 import Conhecimentos from '../components/Conhecimentos'
 import Contato from '../components/Contato'
 import Experiencias from '../components/Experiencias'
+import Footer from '../components/Footer'
 import Homehero from '../components/Homehero'
 import Projetos from '../components/Projetos'
 import styles from '../styles/Home.module.scss'
@@ -20,6 +21,7 @@ const Home: NextPage = () => {
       <Projetos projetos={[]} /> 
       <Conhecimentos />
       <Contato />
+      <Footer />
       
     </div>
   )
