@@ -2,13 +2,13 @@
     height: 3rem;
     border-bottom: 1px solid var(--grey-300);  
     
-    // @media (max-width: 768px) {
-    //     display: none;
-    // }
+    @media (max-width: 1213px) {
+        display: none;
+    }
     
 }
 .headerContent {
-    max-width: 1120px;
+    
     height: 3rem;
     margin: 0 auto;
     padding: 0 5rem;
@@ -39,7 +39,7 @@
             }
 
             & + a {
-                margin-left: 2rem;
+                margin:0 2.8rem;
             }
 
             
