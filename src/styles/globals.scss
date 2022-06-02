@@ -35,6 +35,9 @@
 
 html {
   min-width: 380px;
+  scroll-behavior: smooth;
+
+  
   @media (max-width: 1080px) {
       font-size: 93.75%;
   }
