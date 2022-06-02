@@ -14,24 +14,22 @@ export default function ProjetoItem({ title, type, slug, img }: ProjetoProps) {
     <div className={styles.container}>
 
       <section>
-        <div>
-
+        <div className={styles.imgWrapper} data-aos="zoom-in">
+          <img src={img} alt="img"  />
         </div>
-        <img src={img} alt="img" />
-        <div className={styles.text}>
+        
+        <div className={styles.text} data-aos="zoom-out">
           <h1># {title}</h1>
           <h2>- {type}</h2>
         </div>
       </section>
-      <button type="button">
+      <button type="button" data-aos="fade-up">
         <Link href={`/projetos/${slug}`}>
           <a>
             <ButtonLearnMore />
           </a>
         </Link>
       </button>
-
-
 
     </div>
   );
