@@ -10,10 +10,13 @@ interface ExperienciaItemProps {
 
 export default function ExperienciaItem({ year, title, description }: ExperienciaItemProps) {
     return (
-        <div className={styles.container}>
-          <h1>{year}</h1>
-          <h2>{title}</h2>
-          <p>{description}</p>
-        </div>
+        <>
+            <div className={styles.container} data-aos='zoom-in'>
+                <h1 data-aos="zoom-in">{year}</h1>
+                <h2 >{title}</h2>
+                <p >{description}</p>
+            </div>
+        </>
+
     );
 }

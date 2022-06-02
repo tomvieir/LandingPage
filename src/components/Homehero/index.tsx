@@ -7,15 +7,15 @@ export default function Homehero() {
             <img src='./../../personimg.jpg' alt="imagem" />
 
             <div className={styles.rightContainer}>
-                <SectionTitle 
-                    title="Bem vindo!" 
-                    description="Me chamo Weverton" 
+                <SectionTitle
+                    title="Bem vindo!"
+                    description="Me chamo Weverton"
                 />
 
                 <div className={styles.containerBox}>
 
                     <div className={styles.boxContent}>
-                        <div className={styles.codeItem} >
+                        <div className={styles.codeItem} data-aos="fade-left" >
                             <span className={styles.comment}>//Minha apresentação</span><br />
                             <span className={styles.obj}>Infos</span> {'\u007B'}
                             <div className={styles.blue}>
@@ -26,7 +26,7 @@ export default function Homehero() {
                             </div>
                             {'\u007D'}
                         </div>
-                        <div className={styles.codeItem}>
+                        <div className={styles.codeItem} data-aos="fade-up">
                             <span className={styles.obj}>Cargo</span> {'\u007B'}
                             <div className={styles.blue}>
                                 Função: <span className={styles.string}>'Dev Front-end',</span>
