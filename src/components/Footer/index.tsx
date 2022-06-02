@@ -1,9 +1,9 @@
-import Link from 'next/link';
+
 import styles from './Footer.module.scss';
 import { BsLinkedin, BsGithub, BsInstagram, BsArrowUp } from 'react-icons/bs';
 export default function Footer() {
     return (
-        <>
+        <div className={styles.footerSection}>
             <div className={styles.container}>
                 <div className={styles.leftContainer}>
                     <div className={styles.scrollTop}>
@@ -35,6 +35,6 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
