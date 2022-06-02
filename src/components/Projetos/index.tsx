@@ -27,23 +27,30 @@ export default function Projetos({ projetos }: ProjetosProps) {
             <section>
                 <ProjetoItem
                     key='##'
-                    img='./../../personimg.jpg'
-                    title='projeto 1'
-                    type='Webpage'
+                    img='imgProject/wallet.png'
+                    title='Wallet'
+                    type='Controle financeiro'
                     slug='##'
                 />
                 <ProjetoItem
                     key='##'
-                    img='./../../personimg.jpg'
-                    title='projeto 1'
+                    img='imgProject/appnews.png'
+                    title='App News'
                     type='WebApp'
                     slug='##'
                 />
                 <ProjetoItem
                     key='##'
-                    img='./../../personimg.jpg'
-                    title='projeto 1'
-                    type='##'
+                    img='imgProject/landig.png'
+                    title='Pagina Pessoal'
+                    type='Landing Page'
+                    slug='##'
+                />
+                <ProjetoItem
+                    key='##'
+                    img='imgProject/renee.png'
+                    title='Pagina comercial'
+                    type='Landing Page'
                     slug='##'
                 />
                 
