@@ -11,44 +11,35 @@ export default function Experiencias() {
 
             <section className={styles.itemContainer}>
                 <ExperienciaItem
-                    year="2019" title="Desenvolvimento front-end"
-                    description="Desenvolvimento de aplicações web responsivos e acessíveis
-                com JS Vanilla, css, sass e scss."
-                />
-
-                <ExperienciaItem              
                     year="2020" title="ReactJS"
                     description="Desenvolvimento de aplicações web com ReactJS
-                e Styled-Components."
+                e Styled-Components, APIs REST e Typescript, CHAKRA UI."
                 />
 
                 <ExperienciaItem
                     year="2020" title="NextJS"
                     description="Desenvolvimento de web com NextjS, aproveitando 
-                    o melhor que a FW oferece na questão de aplicações serverless."
-                 />
-
-                <ExperienciaItem
-                    year="2021" title=" TDD Jest e Testing Library"
-                    description="Aplicação de testes unitários com Jest." 
+                    o melhor que a FW oferece na questão de aplicações com back-end
+                    próprio e seguro, integrações com CMS, fluxo de autenticação e otimização."
                 />
 
                 <ExperienciaItem
-                    year="2020" title=" Material UI e ChakraUI"
-                    description="Implementação de componentes de interface." 
+                    year="2020" title=" Javascript & Typescript "
+                    description="Experiência com Javascript Vanilla ou Ttpescript para melhor construção das aplicações
+                    e mais manutenções mais fáceis."
                 />
 
-                <ExperienciaItem    
-                    year="2020" title=" Typescript "
-                    description="Javascript com tipagem para melhor construção das aplicações."
+                <ExperienciaItem
+                    year="2020" title=" Material UI "
+                    description="Experiência com Material UI para melhor construção das aplicações e otimização do tempo de desenvolvimento."
                 />
 
-                <ExperienciaItem    
+                <ExperienciaItem
                     year="2018" title=" Python "
-                    description="Análise de dados e automação de tarefas"
+                    description="Experiência com Pandas, Numpy, Matplotlib, Django, Flask, PySimpleGUI e PyAutoGUI."
                 />
 
-                
+
 
             </section>
 

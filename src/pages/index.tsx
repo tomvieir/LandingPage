@@ -10,18 +10,22 @@ import Projetos from '../components/Projetos'
 import styles from '../styles/Home.module.scss'
 import 'aos/dist/aos.css';
 import Aos from 'aos';
+import Header from '../components/Header'
 
 const Home: NextPage = () => {
 
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
-  
+
   return (
+
     <div className={styles.container}>
       <Head>
         <title>Home</title>
       </Head>
+      <Header />
+
 
       <main>
         <Drawer />

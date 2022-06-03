@@ -4,17 +4,22 @@ import styles from './Header.module.scss'
 
 export default function Header() {
     const { asPath } = useRouter()
+
     return (
-        <header className={styles.headerContainer} >
+        <div className={styles.headerContainer} >
             <div className={styles.headerContent}>
                 <nav>
                     <Link href='/' >
-                    <a className = {asPath === '/' ? styles.active : ''}>Home</a>
-                        
+                        <a className={asPath === '/' ? styles.active : ''}>Home</a>
+
                     </Link>
 
                     <Link href="" >
-                        <a className = {asPath === '/projetos' ? styles.active : ''}>Projetos</a>
+                        <a>Conhecimentos</a>
+                    </Link>
+
+                    <Link href="#projetos" >
+                        <a className={asPath === '/#projetos' ? styles.active : ''}>Projetos</a>
                     </Link>
 
                     <Link href='' >
@@ -22,22 +27,19 @@ export default function Header() {
                     </Link>
 
                     <Link href="" >
-                        <a>Sobre mim</a>
-                    </Link>
-
-                    <Link href="" >
                         <a>Contato</a>
                     </Link>
 
-                    <Link href="" >
-                        <a>Conhecimentos</a>
-                    </Link>
+
+
+
+
 
                 </nav>
 
 
             </div>
-        </header>)
+        </div>)
 
 
 }

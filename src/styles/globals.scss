@@ -8,18 +8,18 @@
     height: 5px;
   }
   ::-webkit-scrollbar-thumb {
-    background: rgb(143, 133, 133);
+    background: var(--primary);
     border-radius: 10px;
   }
   ::-webkit-scrollbar-track{
-    background: var(--cyan-500);
+    background: var(--background);
   }
 }
 
 :root {
   --background: #11172B;
-  --input-background: #1B2138;
-  --input-background-hover: #3e4670;
+  --input-background: #7575751f;
+  --input-background-hover: #0000001c;
   --textHighlight: #444B5B;
   --backgroundLight: #1B2138;
   --primary: #0ee7b7;
@@ -45,8 +45,15 @@ html {
 }
 
 body {
-  background: var(--background);
+
+
+  background: #11172B;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #06173d, #101629);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #04323d, #101629); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   color: var(--white);
+
+
 }
 
 body, input, textarea, select, button {

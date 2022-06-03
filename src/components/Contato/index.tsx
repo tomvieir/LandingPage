@@ -16,7 +16,7 @@ export default function Contato() {
                 <form>
                     <div className={styles.formGroup}>
                         <input type="text" id="nome" placeholder="Nome" />
-                        <input type="email" id="email" placeholder="Email" />
+                        <input type="email" id="email" placeholder="E-mail" />
                     </div>
                     <textarea id="mensagem" placeholder="Mensagem" />
                 </form>

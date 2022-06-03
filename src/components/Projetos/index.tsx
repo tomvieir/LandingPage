@@ -19,7 +19,7 @@ interface ProjetosProps {
 
 export default function Projetos({ projetos }: ProjetosProps) {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='projetos'>
             <div className={styles.title}>
                 <SectionTitle title='#Ultimos ptojetos' description='' />
             </div>

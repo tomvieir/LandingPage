@@ -1,30 +1,48 @@
 .container {
- 
-    margin-top: 9rem;
+
+    margin-top: 11rem;
+    margin-bottom: 19rem;
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: center;
-    align-items: center;
+    width: 100%;
 
-    img { 
+    @media (max-width: 768px) {
+        margin: 3rem 0 0 0
+    }
+
+    img {
         width: 25rem;
+        height: 25rem;
+        object-fit: cover;
         border-radius: 50%;
-        margin: 2rem;
-       
+        opacity: 0.8;
+        box-shadow: 0 0 1000px rgb(0, 0, 0);
+        margin-right: 1.5rem;
+
+
+        @media (max-width: 768px) {
+            margin: 2rem 0 0 0;
+            width: 20rem;
+            height: 20rem;
+        }
+
+
+
     }
 
     .rightContainer {
         display: flex;
         flex-direction: column;
         width: 39rem;
-        
-        margin:0 1rem;
+
+        margin: 0 1rem;
 
         @media (max-width: 1540px) {
             margin: 0;
         }
 
-        
+
         .boxContent {
             width: 100%;
             display: flex;
@@ -35,18 +53,20 @@
             .codeItem {
                 padding: 2rem;
                 font-weight: 300;
+                font-size: 0.7rem;
                 color: #fff;
                 width: 24rem;
-                height: 10rem;
+
                 align-self: flex-start;
                 transition: 1s !important;
                 background: var(--gradient);
+                box-shadow: 0 30px 100px rgba(0, 0, 0, 0.651);
 
 
 
                 @media (max-width: 1450px) {
                     width: 100%;
-                    
+
                     font-size: 0.8rem;
                 }
 
@@ -64,15 +84,15 @@
 
                 .blue {
                     color: rgb(0, 225, 255);
-                    
+
                 }
 
                 .darkblue {
                     color: rgb(109, 7, 192);
                 }
-                
-                
-              
+
+
+
                 cursor: pointer;
 
                 &:hover {
@@ -82,11 +102,11 @@
 
                 &:last-child {
                     align-self: flex-end;
-                  }
+                }
 
-                
 
-                
+
+
 
             }
 

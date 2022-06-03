@@ -4,7 +4,7 @@ import styles from './Homehero.module.scss'
 export default function Homehero() {
     return (
         <div className={styles.container}>
-            <img src='./../../personimg.jpg' alt="imagem" />
+            <img src='./../../personimg.jpg' alt="imagem" /> 
 
             <div className={styles.rightContainer}>
                 <SectionTitle
@@ -24,6 +24,9 @@ export default function Homehero() {
                             <div className={styles.blue}>
                                 Sobrenome: <span className={styles.string}>'Vieira'</span>
                             </div>
+                            <div className={styles.blue}>
+                                Idade: <span className={styles.darkblue}>26</span>
+                            </div>
                             {'\u007D'}
                         </div>
                         <div className={styles.codeItem} data-aos="fade-up">
@@ -32,9 +35,14 @@ export default function Homehero() {
                                 Função: <span className={styles.string}>'Dev Front-end',</span>
                             </div>
                             <div className={styles.blue}>
-                                Empresa: <span className={styles.darkblue}>Null</span>
+                                Descrição: 
+                                <span className={styles.string}>
+                                    "Desenvolvimento de aplicações WEB responsivos, dinâmicos e acessíveis
+                                    utilizando tecnologias como React, Next, TypeScript e Styled Components"                                   
+                                </span>
                             </div>
                             {'\u007D'}
+
                         </div>
 
                     </div>
