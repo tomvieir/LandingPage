@@ -5,11 +5,11 @@ import styles from './ProjetoItem.module.scss';
 interface ProjetoProps {
   title: string;
   type: string;
-  slug: string;
   img: string;
+  link: string;
 }
 
-export default function ProjetoItem({ title, type, slug, img }: ProjetoProps) {
+export default function ProjetoItem({ title, type, link, img }: ProjetoProps) {
   return (
     <div className={styles.container}>
 
@@ -24,7 +24,7 @@ export default function ProjetoItem({ title, type, slug, img }: ProjetoProps) {
         </div>
       </section>
       <button type="button" data-aos="fade-up">
-        <Link href={`/projetos/${slug}`}>
+        <Link href={link}>
           <a>
             <ButtonLearnMore />
           </a>

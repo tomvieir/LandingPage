@@ -1,23 +1,25 @@
+import { GetStaticProps } from "next";
 import Link from "next/link";
+import { createClient } from "../../services/prismic";
 import SectionTitle from "../SectionTitle";
 import ProjetoItem from "./ProjetoItem";
 import styles from './Projetos.module.scss';
+import Prismic from '@prismicio/client';
 
 
-interface IProjeto {
-    slug: string;
+interface projects {
     title: string;
     type: string;
-    description: string;
     link: string;
-    thumbnail: string;
+    img: string;
 }
 
 interface ProjetosProps {
-    projetos: IProjeto[];
+    projetos: projects[];
 }
 
 export default function Projetos({ projetos }: ProjetosProps) {
+    console.log(projetos);
     return (
         <div className={styles.container} id='projetos'>
             <div className={styles.title}>
@@ -25,35 +27,14 @@ export default function Projetos({ projetos }: ProjetosProps) {
             </div>
 
             <section>
-                <ProjetoItem
-                    key='##'
-                    img='imgProject/wallet.png'
-                    title='Wallet'
-                    type='Controle financeiro'
-                    slug='##'
-                />
-                <ProjetoItem
-                    key='##'
-                    img='imgProject/appnews.png'
-                    title='App News'
-                    type='WebApp'
-                    slug='##'
-                />
-                <ProjetoItem
-                    key='##'
-                    img='imgProject/landig.png'
-                    title='Pagina Pessoal'
-                    type='Landing Page'
-                    slug='##'
-                />
-                <ProjetoItem
-                    key='##'
-                    img='imgProject/renee.png'
-                    title='Pagina comercial'
-                    type='Landing Page'
-                    slug='##'
-                />
-                
+                {projetos.map(projeto => (
+                    <ProjetoItem
+                        img={projeto.img}
+                        title={projeto.title}
+                        type={projeto.type}
+                        link={projeto.link} />
+                ))}
+
             </section>
 
             <button type="button">
@@ -66,3 +47,30 @@ export default function Projetos({ projetos }: ProjetosProps) {
         </div>
     )
 }
+
+export const getStaticProps: GetStaticProps = async () => {
+    const prismic = createClient()
+
+    const response = await prismic.query<any>(
+        [Prismic.Predicates.at('document.type', 'projects')], {
+
+    })
+
+    const projects = response.results.map((projectItem: { data: { title: any; type: any; img: any; link: any; }; }) => {
+        return {
+
+            title: projectItem.data.title,
+            type: projectItem.data.type,
+            img: projectItem.data.img,
+            link: projectItem.data.link,
+
+        }
+    })
+    console.log(JSON.stringify(projects, null, 2))
+    return {
+        props: {
+            projects
+        }
+    }
+}
+
