@@ -1169,16 +1169,16 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@prismicio/client@^5":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-5.1.1.tgz#5aa51c3efcd7fc57a08e729814f16d5cc2755d1c"
-  integrity sha512-0wtQrPZCATBmgLklQYgjSrmz3YtMP+5lHakv30MUVyUez2LVoukhVJWTj1uXwsOz2Yh2xLkAp+PHqTOiUvaM/Q==
+"@prismicio/client@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-5.1.0.tgz#f236d7fca09535d61e599872e7c38afda62b8b3c"
+  integrity sha512-LCb+arVVxJOoPM+8qfLCC/Dqse7mh+Q1k3oo5W5Uzu7vVO+vtc7CUYHxgCDkvekakYHc9407kwWu65ErZw+CPQ==
   dependencies:
     cross-fetch "^3.0.6"
 
 "@prismicio/client@^6.4.3":
   version "6.5.1"
-  resolved "https://registry.npmjs.org/@prismicio/client/-/client-6.5.1.tgz"
+  resolved "https://registry.yarnpkg.com/@prismicio/client/-/client-6.5.1.tgz#cf1da0d41579b18ab88684cf4146487cc340fc66"
   integrity sha512-SrluBNcTQ34UZI1oa+DLTWohaE8U2BU2QRpjZ9GOYa9Kty1RqWxFxr+qUTk7LS0QSbmVPEq1AngL5IR2HFZw2A==
   dependencies:
     "@prismicio/helpers" "^2.3.0"
@@ -1186,7 +1186,7 @@
 
 "@prismicio/helpers@^2.3.0":
   version "2.3.0"
-  resolved "https://registry.npmjs.org/@prismicio/helpers/-/helpers-2.3.0.tgz"
+  resolved "https://registry.yarnpkg.com/@prismicio/helpers/-/helpers-2.3.0.tgz#316cdfdf668efd379a8c2ccfc169e320da30a346"
   integrity sha512-/3YJ3F7bN56Pn9y2B4a3t0y4QD0zVPqaHf0Rzd5jCA7Bf0wi3oQ35KHGmP3DrYzz16aQNOZgQy/IO/80QsOYTg==
   dependencies:
     "@prismicio/richtext" "^2.0.1"
@@ -1206,43 +1206,20 @@
     eslint-plugin-react "^7.30.0"
     eslint-plugin-react-hooks "^4.5.0"
 
-"@prismicio/react@^2.4.0", "@prismicio/react@^2.4.1":
+"@prismicio/react@^2.4.0":
   version "2.4.1"
-  resolved "https://registry.npmjs.org/@prismicio/react/-/react-2.4.1.tgz"
+  resolved "https://registry.yarnpkg.com/@prismicio/react/-/react-2.4.1.tgz#ca13c097c3f688babf6b44c7eb42b939e97dc01b"
   integrity sha512-t0uYiyGxo8basQjcsMvgGpyZICw/XgiUIXyx5dERHN52TbGo5zOpZht8ThBuO0nppQMgFzsrvBczJJquJL6yOw==
   dependencies:
     "@prismicio/helpers" "^2.3.0"
     "@prismicio/richtext" "^2.0.1"
 
-"@prismicio/richtext@^2.0.1", "@prismicio/richtext@^2.1.0":
+"@prismicio/richtext@^2.0.1":
   version "2.1.0"
-  resolved "https://registry.npmjs.org/@prismicio/richtext/-/richtext-2.1.0.tgz"
+  resolved "https://registry.yarnpkg.com/@prismicio/richtext/-/richtext-2.1.0.tgz#b17a5ea0eccb9ac0ac9229416462da78a986ca53"
   integrity sha512-uxJaR3soPr356stoLEIcgn+68lfolwxRmlDLTF4gYDcF30rB0YFLPcdRJmhtkU6LGZXIhwUUmwMWXkhT+DV3hA==
   dependencies:
     "@prismicio/types" "^0.1.22"
-
-"@prismicio/slice-simulator-com@^0.3.1":
-  version "0.3.1"
-  resolved "https://registry.npmjs.org/@prismicio/slice-simulator-com/-/slice-simulator-com-0.3.1.tgz"
-  integrity sha512-QUisBlWSrYdSEFEl5m12Mh5g+PgPC2oLHAFyz/b3XgnV0s/8mEOj9OA88FN+zOEU+Z22ZNNCcA4X2xC88UGm2A==
-  dependencies:
-    statuses "^2.0.1"
-
-"@prismicio/slice-simulator-core@^0.2.1":
-  version "0.2.1"
-  resolved "https://registry.npmjs.org/@prismicio/slice-simulator-core/-/slice-simulator-core-0.2.1.tgz"
-  integrity sha512-60cHlSkzmte+mAbvEkIo8BAiLmBBBERhyfyjw7lVsDvTslCU//TulF8D/FxEMV4+Ms50ymFv7a4Ti3NLt2hDzw==
-  dependencies:
-    "@prismicio/slice-simulator-com" "^0.3.1"
-    "@prismicio/types" "^0.1.27"
-    io-ts "^2.2.16"
-
-"@prismicio/slice-simulator-react@^0.2.2":
-  version "0.2.2"
-  resolved "https://registry.npmjs.org/@prismicio/slice-simulator-react/-/slice-simulator-react-0.2.2.tgz"
-  integrity sha512-GfAP4nR01OhsahrNOhc58L0sVDcieU5AWEuuiRN55txQjKgaAl5GVtn0V6Pz4albnY4KKvLlQIffcgy2W+L9TQ==
-  dependencies:
-    "@prismicio/slice-simulator-core" "^0.2.1"
 
 "@prismicio/types-internal@^0.2.7", "@prismicio/types-internal@^0.2.8":
   version "0.2.11"
@@ -1255,7 +1232,7 @@
 
 "@prismicio/types@^0.1.22", "@prismicio/types@^0.1.27":
   version "0.1.27"
-  resolved "https://registry.npmjs.org/@prismicio/types/-/types-0.1.27.tgz"
+  resolved "https://registry.yarnpkg.com/@prismicio/types/-/types-0.1.27.tgz#7f2fd91f1781a6da62630438b828230df72ae2b3"
   integrity sha512-+Oc7EFcp6RGVMvFKQl9y9D4HtBhHeOtE0asfYhedCflQDf3OOzjE8POIu1bXTkk8i1kEWM3oYvz6yLN4yAyGWQ==
 
 "@rushstack/eslint-patch@^1.1.3":
@@ -3744,7 +3721,7 @@ ignore@^5.2.0:
 
 imgix-url-builder@^0.0.3:
   version "0.0.3"
-  resolved "https://registry.npmjs.org/imgix-url-builder/-/imgix-url-builder-0.0.3.tgz"
+  resolved "https://registry.yarnpkg.com/imgix-url-builder/-/imgix-url-builder-0.0.3.tgz#9f386de64cdd1363d352a7f6313fd7dacd8fb282"
   integrity sha512-8Oc2Cn4+jF06sEfJcVPlWYfD2F6RjrwIMbk1xEzux8unoB5LsvFc/GL1BQ47HPaeE12ReX2nMUcjUslGYWLxHA==
 
 immutable@^4.0.0:
@@ -5976,7 +5953,7 @@ static-extend@^0.1.1:
     define-property "^0.2.5"
     object-copy "^0.1.0"
 
-statuses@2.0.1, statuses@^2.0.1:
+statuses@2.0.1:
   version "2.0.1"
   resolved "https://registry.npmjs.org/statuses/-/statuses-2.0.1.tgz"
   integrity sha512-RwNA9Z/7PrK06rYLIzFMlaF+l73iwpzsqRIFgbMLbTcLD6cOao82TaWefPXQvB2fOC4AjuYSEndS7N/mTCbkdQ==
