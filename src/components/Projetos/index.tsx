@@ -8,7 +8,7 @@ import Prismic from '@prismicio/client';
 import RichText from '@prismicio/helpers'
 
 
-interface projetos {
+interface iprojetos {
     title: string;
     type: string;
     link: string;
@@ -16,7 +16,7 @@ interface projetos {
 }
 
 interface ProjetosProps {
-    projetos: projetos[];
+    projetos: iprojetos[];
 }
 
 export default function Projetos({ projetos }: ProjetosProps) {
@@ -28,15 +28,16 @@ export default function Projetos({ projetos }: ProjetosProps) {
             </div>
 
             <section>
-                {/* {projetos.map(projeto => (
+                
+                {projetos.map(projeto => (
                     <ProjetoItem
                         img={projeto.img}
                         title={projeto.title}
                         type={projeto.type}
                         link={projeto.link} />
-                ))} */}
+                ))}
 
-                <ProjetoItem
+                {/* <ProjetoItem
                     key='##'
                     img='imgProject/wallet.png'
                     title='Wallet'
@@ -67,7 +68,7 @@ export default function Projetos({ projetos }: ProjetosProps) {
                     type='Landing Page'
                     link=''
                    
-                />
+                /> */}
 
             </section>
 
