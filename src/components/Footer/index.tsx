@@ -18,17 +18,17 @@ export default function Footer() {
 
                 <div className={styles.rightContainer}>
                     <div className={styles.social}>
-                        <a href="" className={styles.linkedin}>
+                        <a href="https://www.linkedin.com/in/wevertonvieira/" className={styles.linkedin}>
                             <div className={styles.icon}><BsLinkedin /></div>
 
                         </a>
 
-                        <a href="" className={styles.github}>
+                        <a href="https://github.com/tomvieir" className={styles.github}>
                             <div className={styles.icon}><BsGithub /></div>
 
                         </a>
 
-                        <a href="" className={styles.instagram}>
+                        <a href="https://www.instagram.com/tom.vieir/" className={styles.instagram}>
                             <div className={styles.icon}><BsInstagram /></div>
 
                         </a>
