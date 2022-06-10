@@ -67,8 +67,8 @@ export const getStaticProps: GetStaticProps = async () => {
   const projetos = response.results.map(projeto => ({
     title: projeto.data.title.find((content: { type: string; }) => content.type === 'paragraph')?.text ?? '',
     type: projeto.data.type.find((content: { type: string; }) => content.type === 'paragraph')?.text ?? '',
-    link: projeto.data.link.url,
-    img: projeto.data.img.url,
+    link: projeto.data.link.url ?? '',
+    img: projeto.data.img.url ?? '',
   }))
 
   // console.log(projetos)
