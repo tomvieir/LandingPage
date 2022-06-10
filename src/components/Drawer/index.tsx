@@ -22,27 +22,27 @@ export default function Drawer() {
                     <nav>
                         <ul>
                             <li>
-                                <Link href=''>
+                                <Link href='#home'>
                                     <a>HOME</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href=''>
+                                <Link href='#projetos'>
                                     <a>PROJETOS</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href=''>
+                                <Link href='#competencias'>
                                     <a>COMPETÊNCIAS</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href=''>
+                                <Link href='#conhecimentos'>
                                     <a>CONHECIMENTOS</a>
                                 </Link>
                             </li>
                             <li>
-                                <Link href=''>
+                                <Link href='#contatos'>
                                     <a>CONTATOS</a>
                                 </Link>
                             </li>
@@ -59,6 +59,6 @@ export default function Drawer() {
                 </aside>
             </div>
         </div>
-
+        
     )
 }

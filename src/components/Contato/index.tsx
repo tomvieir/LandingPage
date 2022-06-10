@@ -14,7 +14,7 @@ export default function Contato() {
     }
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='contatos'>
             <SectionTitle
                 title="Precisa dos meus serviços?"
                 description="Preencha o formulário abaixo e entrarei em contato em breve! :)"

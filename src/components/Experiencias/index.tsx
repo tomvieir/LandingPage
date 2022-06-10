@@ -4,7 +4,7 @@ import styles from './Experiencias.module.scss'
 
 export default function Experiencias() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='competencias'>
             <div className={styles.titleContainer}>
                 <SectionTitle title="Competências" description="#04 anos" />
             </div>

@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from 'next'
+import type { GetStaticProps } from 'next'
 import Head from 'next/head'
 import { useEffect } from 'react'
 import Conhecimentos from '../components/Conhecimentos'
@@ -13,7 +13,7 @@ import Aos from 'aos';
 import Header from '../components/Header'
 import { getPrismicClient } from '../services/prismic'
 import Prismic from '@prismicio/client';
-import RichText from '@prismicio/helpers'
+
 
 interface iprojetos {
   title: string;
@@ -50,8 +50,6 @@ export default function Home({ projetos }: HomeProps) {
     </div>
   )
 }
-
-
 
 
 export const getStaticProps: GetStaticProps = async () => {

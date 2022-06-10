@@ -23,9 +23,9 @@ export default function ProjetoItem({ title, type, link, img }: ProjetoProps) {
           <h2>- {type}</h2>
         </div>
       </section>
-      <button type="button" data-aos="fade-up">
+      <button type="button"  data-aos="fade-up">
         <Link href={link}>
-          <a>
+          <a target="_blank">
             <ButtonLearnMore />
           </a>
         </Link>

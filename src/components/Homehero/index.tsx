@@ -3,8 +3,8 @@ import styles from './Homehero.module.scss'
 
 export default function Homehero() {
     return (
-        <div className={styles.container}>
-            <img src='./../../personimg.jpg' alt="imagem" /> 
+        <div className={styles.container} id='home'>
+            <img src='./../../personimg.jpg' alt="imagem" />
 
             <div className={styles.rightContainer}>
                 <SectionTitle
@@ -32,13 +32,17 @@ export default function Homehero() {
                         <div className={styles.codeItem} data-aos="fade-up">
                             <span className={styles.obj}>Cargo</span> {'\u007B'}
                             <div className={styles.blue}>
-                                Função: <span className={styles.string}>'Dev Front-end',</span>
+                                Empresa: <span className={styles.string}>'FASTERS Solutions',</span>
                             </div>
                             <div className={styles.blue}>
-                                Descrição: 
+                                Função: <span className={styles.string}>'Dev Front-end',</span>
+                            </div>
+
+                            <div className={styles.blue}>
+                                Descrição:
                                 <span className={styles.string}>
                                     "Desenvolvimento de aplicações WEB responsivos, dinâmicos e acessíveis
-                                    utilizando tecnologias como React, Next, TypeScript e Styled Components"                                   
+                                    utilizando tecnologias como React, Next, TypeScript e Styled Components"
                                 </span>
                             </div>
                             {'\u007D'}

@@ -7,7 +7,7 @@ import styles from './Conhecimentos.module.scss';
 
 export default function Conhecimentos() {
     return (
-        <div className={styles.container}>
+        <div className={styles.container} id='conhecimentos'>
 
             <div className={styles.titleContainer}>
                 <SectionTitle title="Conhecimentos" description="" />

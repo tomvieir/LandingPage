@@ -1,11 +1,8 @@
-import { GetStaticProps } from "next";
+
 import Link from "next/link";
-import { getPrismicClient } from "../../services/prismic";
 import SectionTitle from "../SectionTitle";
 import ProjetoItem from "./ProjetoItem";
 import styles from './Projetos.module.scss';
-import Prismic from '@prismicio/client';
-import RichText from '@prismicio/helpers'
 
 
 interface iprojetos {
@@ -36,49 +33,13 @@ export default function Projetos({ projetos }: ProjetosProps) {
                         type={projeto.type}
                         link={projeto.link} />
                 ))}
-
-                {/* <ProjetoItem
-                    key='##'
-                    img='imgProject/wallet.png'
-                    title='Wallet'
-                    type='Controle financeiro'
-                    link=''
-                  
-                />
-                <ProjetoItem
-                    key='##'
-                    img='imgProject/appnews.png'
-                    title='App News'
-                    type='WebApp'
-                    link=''
-              
-                />
-                <ProjetoItem
-                    key='##'
-                    img='imgProject/landig.png'
-                    title='Pagina Pessoal'
-                    type='Landing Page'
-                    link=''
-             
-                />
-                <ProjetoItem
-                    key='##'
-                    img='imgProject/renee.png'
-                    title='Pagina comercial'
-                    type='Landing Page'
-                    link=''
-                   
-                /> */}
-
             </section>
 
             <button type="button">
-                <Link href="/projetos">
-                    <a>Ver todos os projetos </a>
+                <Link href="https://github.com/tomvieir?tab=repositories">
+                    <a target='_blank'>Ver todos os projetos </a>
                 </Link>
             </button>
-
-
         </div>
     )
 }
