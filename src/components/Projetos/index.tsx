@@ -27,7 +27,7 @@ export default function Projetos({ projetos }: ProjetosProps) {
             <section>
                 
                 {projetos.map(projeto => (
-                    <ProjetoItem
+                    <ProjetoItem key={projeto.type}  
                         img={projeto.img}
                         title={projeto.title}
                         type={projeto.type}
