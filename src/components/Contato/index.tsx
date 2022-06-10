@@ -1,10 +1,18 @@
 import SectionTitle from "../SectionTitle";
 import { BsFillTelephoneForwardFill, BsTelegram } from 'react-icons/bs';
 import { IoLogoWhatsapp } from 'react-icons/io';
+import swal from 'sweetalert';
 
 import styles from './Contato.module.scss';
 
 export default function Contato() {
+
+    const handleSwal = () => {
+        swal({
+            text: "Desculpe, no momento não estou recebendo projetos.",
+        });
+    }
+
     return (
         <div className={styles.container}>
             <SectionTitle
@@ -13,18 +21,16 @@ export default function Contato() {
             />
 
             <div className={styles.formContainer}>
-                <form>
+                <form onClick={handleSwal}>
                     <div className={styles.formGroup}>
                         <input type="text" id="nome" placeholder="Nome" />
                         <input type="email" id="email" placeholder="E-mail" />
                     </div>
                     <textarea id="mensagem" placeholder="Mensagem" />
                 </form>
-
                 <button type="button">
                     <a>Enviar </a>
                 </button>
-
             </div>
 
             <div className={styles.contactContainer}>
@@ -43,7 +49,7 @@ export default function Contato() {
 
                         <a href="https://api.whatsapp.com/send/?phone=5562999248225&text&app_absent=0"><IoLogoWhatsapp /></a>
                     </div>
-                    <div className={styles.item} data-aos='fade-up'data-aos-delay='300'>
+                    <div className={styles.item} data-aos='fade-up' data-aos-delay='300'>
                         <a href="https://t.me/tomvieir"><BsTelegram /></a>
 
                     </div>
