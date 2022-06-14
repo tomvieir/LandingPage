@@ -22,6 +22,7 @@
             align-items: center;
             justify-content: center;
             gap: 1rem;
+            position: relative;
 
             .formGroup {
                 width: 100%;
@@ -63,7 +64,19 @@
                     }
 
                 }
+                
+                
 
+            }
+
+            p {
+                font-size: 1rem;
+                color: var(--text);
+                margin-top: 10px;
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                transform: translate(-150%, -50%);
             }
 
             textarea {
@@ -104,6 +117,10 @@
         transition: 0.5s;
         background-color: rgba(0, 255, 128, 0.144);
 
+        &:disabled {
+            background-color: rgb(104, 104, 104);
+        }
+
         &:hover {
             opacity: 0.8;
         }
@@ -114,6 +131,8 @@
             font-size: 1.5rem;
             font-weight: 300;
         }
+
+
     }
 
     .contactContainer {
@@ -124,7 +143,7 @@
 
 
 
-        
+
 
         .itemContainer {
             max-width: 500px;
@@ -136,7 +155,7 @@
             background-color: #0874741c;
             padding: 1rem;
 
-            
+
 
             .item {
                 width: 100%;
